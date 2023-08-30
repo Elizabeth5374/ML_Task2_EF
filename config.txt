@@ -6,7 +6,7 @@ reset_on_extinction   = True
 
 [DefaultGenome]
 # node activation options
-activation_default      = tanh
+activation_default      = tanh # fun one to play with
 activation_mutate_rate  = 0.01
 activation_options      = tanh
 
