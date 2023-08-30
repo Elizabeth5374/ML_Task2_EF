@@ -37,7 +37,10 @@ why it is necessary and where it is being used in the rest of the program.
 
 
 class Car:
-    """1. This Function:"""
+    """1. This Function:
+        - class constructor __> sets up car with basic features
+        
+    """
 
     def __init__(self):
         # Load Car Sprite and Rotate
@@ -66,7 +69,8 @@ class Car:
         self.time = 0  # Time Passed
 
     """ 2. This Function:
-    
+    - draws car on screen --> uses py game
+    blit - sprite
     """
 
     def draw(self, screen):
@@ -85,7 +89,7 @@ class Car:
             pygame.draw.circle(screen, (0, 255, 0), position, 5)
 
     """ 4. This Function:
-    
+        - radar that checks for collisions
     """
 
     def check_collision(self, game_map):
